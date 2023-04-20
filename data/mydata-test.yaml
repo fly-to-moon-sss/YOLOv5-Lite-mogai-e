@@ -1,0 +1,19 @@
+# COCO 2017 dataset http://cocodataset.org
+# Train command: python train.py --data coco.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco
+#     /yolov5
+
+
+# download command/URL (optional)
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+
+train: VisDrone/VisDrone2019-DET-train/images  # train images (relative to 'path')  6471 images
+
+val: VisDrone/VisDrone2019-DET-test-dev/images   # test images (optional)  1610 images
+
+# Classes
+nc: 10  # number of classes
+names: [ 'pedestrian', 'people', 'bicycle', 'car', 'van', 'truck', 'tricycle', 'awning-tricycle', 'bus', 'motor' ]
